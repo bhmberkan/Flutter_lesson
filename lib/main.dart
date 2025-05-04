@@ -36,22 +36,11 @@ class _WidgetDetailState extends State<WidgetDetail> {
             ), // menu ikonlarının geldiği yer 
           // actions: [], // menü gibi sağ üstte bulunan sekme liste alır.
         ),
-        body: // Text("Hello flutter"), // sol üste gelecek ortalamak istersek
-         Center(
-          child: Column(
-            mainAxisAlignment:  MainAxisAlignment.center,
-            children: [
-              Text(value.toString()),
-              Text("Flutter ögrenmek", 
-             style: GoogleFonts.acme(
-              fontSize: 40,
-              color: HexColor(AppColors.backgroundColor)
-            
-             )
-             ),
-             const Text("örnek")
-            ],
-          ),
+        body: Container(
+         // padding: const EdgeInsets.symmetric(vertical: 20.0,horizontal: 40.0), //only(left: 20.0, top: 10.0),  //fromLTRB(40, 5, 20, 10), //EdgeInsets.all(20.0),
+          margin: const EdgeInsets.all(20.2),
+          color: Colors.green,
+          child: const Text("örnek"),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
